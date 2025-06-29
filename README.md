@@ -1,13 +1,18 @@
 # contabilidad_gerencial
 
-modelo base en PHP 5.6, todo en un mismo archivo .php, que incluye:
+# Contabilidad Gerencial · CyTA
 
-Formulario para ingresar los valores del Estado de Resultados
+Este repositorio contiene desarrollos vinculados al análisis del Estado de Resultados de pequeñas empresas, integrando herramientas digitales, lógica contable y generación de prompts para inteligencia artificial (IA).
 
-Cálculos automáticos de utilidad bruta, operativa y neta
+Los proyectos se encuentran enmarcados en el modelo MOA (Modelo de Organización de Aprendizajes) impulsado desde [CyTA](https://cyta.com.ar).
 
-Tabla generada con los resultados
+---
 
-Generación de un prompt para ChatGPT basado en los datos ingresados
+## 🧩 Contenidos
 
-Primer modelo en https://cyta.com.ar/cybercyta/moa/estado_resultados.php
+### 1. `estado_resultados.php` — Versión genérica
+Formulario en PHP 5.6 que permite ingresar los valores de los principales rubros de un Es
+
+Ver: 
+https://cyta.com.ar/cybercyta/moa/estado_resultados.php
+https://cyta.com.ar/cybercyta/moa/estado_resultados_rt9.php
