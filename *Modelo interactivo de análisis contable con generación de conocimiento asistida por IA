@@ -1,0 +1,98 @@
+**Modelo interactivo de análisis contable con generación de conocimiento asistida por IA**
+
+Este modelo forma parte del desarrollo del Bookia "Modelo de Negocio: una técnica para su elaboración" y ha sido integrado en el capítulo *Costo-Beneficio: Estado de Resultados*. A continuación se presenta el esquema de funcionamiento que articula la lógica de entrada-procesamiento-salida con una instancia de inferencia IA.
+
+---
+
+### Arquitectura funcional del modelo
+
+1. **Ingreso estructurado de datos**
+
+   * Vía formulario HTML + PHP 5.6.
+   * Se ingresan los valores del Estado de Resultados para dos períodos.
+   * Se identifican rubros clave según la RT N.º 9 (FACPCE):
+
+     * Ventas
+     * Costo de Ventas
+     * Gastos de Comercialización
+     * Gastos de Administración
+     * Otros Ingresos/Egresos
+     * Resultado Financiero y por Tenencia
+     * Impuesto a las Ganancias
+   * El usuario selecciona además:
+
+     * Tipo de empresa (Industrial, Comercial, Servicios)
+     * Tamaño de empresa (Micro, Pequeña, Mediana, Grande)
+
+2. **Procesamiento automático**
+
+   * Cálculo de:
+
+     * Resultado Bruto
+     * Resultado Ordinario
+     * Resultado del Ejercicio
+   * Análisis comparativo entre períodos:
+
+     * Variación absoluta y porcentual por rubro y por resultado.
+   * Clasificación automática visual con código de colores (positivo/negativo).
+
+3. **Generación de conocimiento intermedio (prompt)**
+
+   * Se elabora una narración automática:
+
+     * Que integra los datos procesados
+     * Describe el comportamiento del Estado de Resultados
+     * Señala las variaciones significativas
+     * Solicita a la IA que interprete causas y recomiende acciones
+
+4. **Interfaz de transferencia a la IA (ChatGPT)**
+
+   * Botón para copiar prompt
+   * Botón para abrir ChatGPT
+   * Posibilidad de validación y exploración por parte del usuario
+
+5. **Ciclo de retroalimentación**
+
+   * El output de IA se considera parte del proceso de contrastación.
+   * Se transforma en una curación analítica del Estado de Resultados.
+   * Opcionalmente se documenta y guarda como parte de la memoria organizacional.
+
+---
+
+### Representación esquemática
+
+```
+[Formulario HTML + PHP]
+      ↓ (datos ingresados por usuario)
+[Procesamiento: cálculos comparativos PHP]
+      ↓
+[Generación de Prompt automático IA]
+      ↓
+[ChatGPT / IA Externa: análisis y recomendación]
+      ↓
+[Curación final → Aprendizaje / Mejora de gestión]
+```
+
+---
+
+### Valor agregado del enfoque
+
+* Integra **cibernética de primer orden** (proceso técnico) con **cibernética de segundo orden** (interpretación reflexiva).
+* Transforma el Estado de Resultados en **sistema dinámico de gestión**, no solo en un documento contable.
+* Aplica el **modelo MOA** con una instancia de inferencia IA generativa.
+* Facilita el aprendizaje autónomo, la toma de decisiones y la sistematización del conocimiento.
+
+---
+
+**Autores:**
+
+* Marcelo Claudio Perissé (CyTA)
+* ChatGPT – OpenAI (desarrollo asistido y recomendaciones de arquitectura)
+
+**Repositorio relacionado:**
+
+* [https://github.com/cyta5-0/contabilidad\_gerencial](https://github.com/cyta5-0/contabilidad_gerencial)
+
+**Curación semántica vinculada:**
+
+* [https://cyta.com.ar/bookia/curation\_semantic\_bookia.php?id=5#curationAIGen](https://cyta.com.ar/bookia/curation_semantic_bookia.php?id=5#curationAIGen)
